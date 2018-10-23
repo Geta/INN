@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INN.Core", "src\INN.Core\INN.Core.csproj", "{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{CAC0DFCF-D2FD-4E8C-BC97-13DB7C67A6BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INN.Test.Integration", "test\INN.Test.Integration\INN.Test.Integration.csproj", "{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Geta.Test|Any CPU = Geta.Test|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Geta.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Geta.Test|Any CPU.Build.0 = Release|Any CPU
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E36CB2C-C988-41CA-8B7E-A1F56E36DD14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Geta.Test|Any CPU.ActiveCfg = Release|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Geta.Test|Any CPU.Build.0 = Release|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{805FB881-17A2-4ECD-B52F-ADF1CB4B17EA} = {CAC0DFCF-D2FD-4E8C-BC97-13DB7C67A6BC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9EEC3F59-8D05-4A36-BEDE-9D3127889B36}
+	EndGlobalSection
+EndGlobal

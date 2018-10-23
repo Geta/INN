@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <projectUrl>https://github.com/Geta/INN</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>https://github.com/Geta/INN/tree/epi-demo#changelog</releaseNotes>
+    <iconUrl>https://cdn.geta.no/opensource/icons/Geta-logo-3.png</iconUrl>
+    <copyright>$copyright$</copyright>
+    <tags>EPiServer Commerce</tags>
+  </metadata>
+</package>

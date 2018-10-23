@@ -1,0 +1,33 @@
+﻿@using INN.Core.Models
+@using Mediachase.Commerce.Customers
+@using Newtonsoft.Json
+@model EPiServer.Reference.Commerce.Site.Features.Inn.InnViewModel
+
+<h2>INN by 1881 Opplysningen</h2>
+
+@switch (Model.InnStatusResult.LoginStatus)
+{
+    case InnLoginStatus.NotLoggedIn:
+        <a href="@Model.InnStatusResult.Url">Log in</a>
+        break;
+    case InnLoginStatus.NeedConsent:
+        <a href="@Model.InnStatusResult.Url">Give consent to Quicksilver</a>
+        break;
+    case InnLoginStatus.LoggedIn:
+        if (CustomerContext.Current.CurrentContact != null)
+        {
+            <p>Your INN addresses have been synced with Episerver!</p>
+        }
+        else
+        {
+            <select class="form-control jsChangeInnAddress">
+                <option>Select an INN address</option>
+                @foreach (var address in Model.Addresses)
+                {
+                    <option value="@address.Tags">@address.Name - @address.AddressLine1</option>
+                }
+            </select>
+            <input type="hidden" value="@JsonConvert.SerializeObject(Model.Addresses)" id="InnAddressData" data-preselect="@(Model.PreselectedAddress != null ? JsonConvert.SerializeObject(Model.PreselectedAddress): "")" />
+        }
+        break;
+}
